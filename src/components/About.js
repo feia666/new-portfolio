@@ -11,9 +11,7 @@ class About extends Component {
             <Reveal Reveal effect="fadeInUp" bottom>
                     <p>{data.abouttext}</p>
             </Reveal>
-            <div className='About'>
-                <About></About>
-            </div>
+
             </div>
             {data.ShowAboutImage ? <img src={data.aboutImage} alt='about iamge'></img> : null}
             

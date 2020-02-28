@@ -15,18 +15,21 @@ html,body,#root{
 
 .App {
   width:100%;
+
 }
 
 
 
-.App-header {
+.p {
   position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   color: black;
   top:4em;
+  align-content: center;
+}
+.logo {
+  position: relative;
+  display: flex;
 }
 .heading-background{
   position: fixed;
@@ -38,21 +41,19 @@ html,body,#root{
   color:#9352ae;
 }
 header{
+  width: 70%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  left: 10em;
+  top: 5em;
 }
-header h1{
-font-size: 1em;
-font-weight: 400;  
-padding: 2em;
-margin-right: 50em;
-}
+
 nav{
-  position: relative;;
-  left:60em;
-  top:6em;
+  position: absolute;
+ right: 10em;
+  top:5em;
+ 
 z-index: 100;
 }
 nav li{
@@ -60,6 +61,7 @@ display: inline;
   padding:1em;
   height: 1em;
   cursor: pointer;
+
 
 
 }
@@ -91,6 +93,7 @@ li .link:hover{
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
+  margin-top: 3em;
 }
 .header-title button:hover{
   opacity: 0.8;
@@ -101,23 +104,34 @@ li .link:hover{
   text-decoration: none;
 }
 .header-title{
+
   position: relative;
+  width: 80%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   text-align: left;
-  top:2em;
+  left: 5em;
+  right: 5em;
+  top:5em;
+ 
 }
 .about{
+
   display: flex;
   flex-direction: row;
+  
 }
 .about-content{
+  width: 80%;
   position: relative;
-  left:15em;
+  left: 10em;
+  right: 5em;
+  top: 15em;
+  align-content: space-between;
 }
 .about-content h1{
   font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
+  font-size: 2em;
   text-align: left;
 }
 .about-content p{
@@ -127,29 +141,32 @@ li .link:hover{
 }
 .about img{
   margin-left: 5em;
+  height: 20em;
 }
 .work{
   position: relative;
   display: flex;
+  width: 80%;
   flex-direction: column;
-  left:15em;
-  top:8em;
+  left:10em;
+  top:10em;
   align-items: flex-start;
 }
 .work .heading{
   font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
+  font-size: em;
   text-align: left;
 }
 .work .work-content{
+  align-items: flex-end;
   display: grid;
   grid-template-columns: repeat(2,1fr);
   grid-gap: 2em;
 }
 
 .project img{
-width: 30em;  
-height: 30em;
+width: 25em;  
+height: 25em;
 }
 .contact{
   position: relative;
@@ -206,6 +223,7 @@ margin-right: 0em;
 }
 
 .heading-background{
+  background-color: black;
   display: none;
 }
 nav{
@@ -244,8 +262,8 @@ nav{
   grid-gap: 5em;
 }
 .project img{
-width: 45em;  
-height: 45em;
+width: 38em;  
+height: 38em;
 }
 
 .contact{
@@ -253,10 +271,10 @@ height: 45em;
   left:2em;
 }
 .contact h1{
-  font-size: 4em;
+  font-size: 3em;
 }
 .contact .email{
-  font-size: 3.5em;
+  font-size: 2em;
 }
 
 .contact li{
@@ -280,7 +298,7 @@ height: 45em;
 
 
 body{
-    font-size: 10px;
+    font-size: 5px;
   }
 header h1{
 font-size: 5em;  
@@ -291,11 +309,8 @@ margin-right: 0em;
 nav{
   display: none;
 }
-.header-title{
-  font-size: 3.6em;
-  text-align: left;
-  top:1em;
-  left:1em;
+.App-header{
+  align-self: flex-start;
 }
 .about{position: relative;
       display: flex;
@@ -313,12 +328,14 @@ nav{
   width: 700px;
 }
 
+
 .work{
   left:6em;
   top:4em;
   align-items: flex-start;
 }
 .work .work-content{
+  width: 70%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5em;
@@ -417,11 +434,9 @@ height: 32em;
   top:10em;
   left:8em;
 }
-.contact h1{
-  font-size: 8em;
-}
-.contact .email{
-  font-size: 5em;
+
+.a .email{
+  font-size: 3em;
 }
 
 .contact li a{

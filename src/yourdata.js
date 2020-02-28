@@ -16,9 +16,9 @@ export default
         contactEmail:'feiashao@gmail.com',
         // Add Your About Text Here
         abouttext: "Designer, thinker, prblem-solver",
-        aboutImage:'https://images.unsplash.com/photo-1521587765099-8835e7201186?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60',
+        aboutImage:'https://1aike31wshtt3k0e9u2nxtwz-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/editorial-illustration-by-spiros-halaris-3.jpg',
        //Change This To Hide The Image of About Section (True Or False)
-       ShowAboutImage:false,//true or false (Change Here)
+       ShowAboutImage:true,//true or false (Change Here)
        // Change Projects Here 
        projects:[
            {

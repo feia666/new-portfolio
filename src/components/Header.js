@@ -9,11 +9,11 @@ class Header extends Component {
 
     render() {
         return (<div>
-        <h1 className='heading-background'>DESIGNER</h1>
+        <h1 className='heading-background'>DESIGN</h1>
             <header>
-                <h1>
-                    <Reveal effect="fadeInUp" bottom cascade>{data.name}</Reveal></h1>
-                <img ClassName = 'logo' scr = 'logo.png' alt='logo'/>
+            
+                    {/* <Reveal effect="fadeInUp" bottom cascade>{data.name}</Reveal> */}
+                <img className = 'logo' scr = 'logo.png' alt='logo'/>
             </header>
             <Reveal effect="fadeInUp" bottom>
             <p className='header-title'>

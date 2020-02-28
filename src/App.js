@@ -20,7 +20,9 @@ function App() {
       </div>
       {/* <Route path= "/pj1" component={Page1}/> */}
 
-
+    <div className = 'about'>
+    <About></About>
+    </div>
 
       <div className='work'>
         <Work></Work>
