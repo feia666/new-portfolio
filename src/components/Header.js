@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Reveal from 'react-reveal/Reveal';
 import data from '../yourdata';
-import logo from './logo.png';
+
+
 
 
 class Header extends Component {
@@ -13,7 +14,7 @@ class Header extends Component {
             <header>
             
                     {/* <Reveal effect="fadeInUp" bottom cascade>{data.name}</Reveal> */}
-                <img className = 'logo' scr = 'logo.png' alt='logo'/>
+               
             </header>
             <Reveal effect="fadeInUp" bottom>
             <p className='header-title'>

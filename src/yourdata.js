@@ -1,4 +1,4 @@
-
+// require('./components/')
 export default
 
     {
@@ -15,7 +15,7 @@ export default
         //Contact Email
         contactEmail:'feiashao@gmail.com',
         // Add Your About Text Here
-        abouttext: "Designer, thinker, prblem-solver",
+        abouttext: "Designer, thinker, problem-solver",
         aboutImage:'https://1aike31wshtt3k0e9u2nxtwz-wpengine.netdna-ssl.com/wp-content/uploads/2019/03/editorial-illustration-by-spiros-halaris-3.jpg',
        //Change This To Hide The Image of About Section (True Or False)
        ShowAboutImage:true,//true or false (Change Here)
@@ -26,7 +26,7 @@ export default
             title:'Project One', //Project Title - Add Your Project Title Here
              service:'UI/UX Design', // Add Your Service Type Here
             //Project Image - Add Your Project Image Here
-             imageSrc:"https://images.unsplash.com/photo-1558104631-0fa41a8f6c20?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+             imageSrc:require('./components/c1.jpg'),
              //Project URL - Add Your Project Url Here
              url:'/pj1'
             },
@@ -34,7 +34,7 @@ export default
                 id: 2,//DO NOT CHANGE THIS (Please)😅
                 title: 'Project Two',
                 service: 'Website Development',
-                imageSrc: "https://images.unsplash.com/photo-1554866585-cd94860890b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                imageSrc: require('./components/c2.jpg'),
                 url:'/pj2'
             },
             { 
@@ -52,33 +52,20 @@ export default
                 url:'/pj4'
            }
 
-                    /*
-                    If You Want To Add More Project just Copy and Paste This At The End (Update the id Respectively)
-                ,{
-                id: 5,
-                title: 'Project Five',
-                service: 'Something Amazing',
-                imageSrc: "",
-                url: ''
-            }
-                */
+    
         ],
         social: [
-            // Add Or Remove The Link Accordingly
+            
             {   name:'Github',
                 url:'https://github.com/chetanverma16'},
             {
-                name: 'Behance',
-                url: 'https://www.behance.net/chetanverma'
-            },
-            {
-                name: 'Dribbble',
-                url: 'https://dribbble.com/chetanverma'
-            },
-            {
-                name: 'Instagram',
-                url: 'https://www.instagram.com/cv.uidesign/'
-            }
 
+                name: 'Linkin',
+                url: 'https://www.instagram.com/cv.uidesign/'
+            },
+
+            { name: 'Instagram',
+            url: 'https://www.instagram.com/cv.uidesign/'
+        }
         ]
     }

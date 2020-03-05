@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
 import About from './components/About';
@@ -8,30 +8,37 @@ import Work from './components/work';
 import Contact from './components/Contact';
 import Navbar from './components/Navbar';
 
-// import Page1 from './projects';
+import Page1 from './projects/pj1';
 import'./media.css';
+import Home from './home';
+
+
+import logo from './components/logo.png';
 
 function App() {
+  
+  
   return <BrowserRouter>
     <div className="App">
-      <Navbar></Navbar>
-      <div className="App-header">
-      <Header></Header>
-      </div>
-      {/* <Route path= "/pj1" component={Page1}/> */}
+    <img className = 'logo' src = {logo} alt='logo'/>
+     
 
-    <div className = 'about'>
-    <About></About>
-    </div>
+  
+<Switch>
+  <Route path= "/pj1" component={Page1}/>
+  <Route path= "/home" component={Home}/>
+  <Route path="/About" component={About}/>
+</Switch>
+<Navbar></Navbar>
 
-      <div className='work'>
-        <Work></Work>
-      </div>
-      <div className='contact'>
-        <Contact></Contact>
-      </div>
+
+    
+
+
+  
     </div>
     </BrowserRouter>
 }
+
 
 export default App;

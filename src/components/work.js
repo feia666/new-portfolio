@@ -3,6 +3,8 @@ import Project from './project';
 import Reveal from 'react-reveal/Reveal';
 import data from '../yourdata';
 
+
+
 class Work extends Component {
     state = {  }
     render() { 
@@ -16,7 +18,9 @@ class Work extends Component {
                              service = {project.service}
                              imageSrc = {project.imageSrc}
                              url={project.url}
+                             
                      ></Project>
+                     
                 ))}
         </div>
         </div>  );

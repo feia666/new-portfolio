@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 html,body,#root{
   height:100%;
@@ -15,7 +16,7 @@ html,body,#root{
 
 .App {
   width:100%;
-
+  align-content: center;
 }
 
 
@@ -30,6 +31,10 @@ html,body,#root{
 .logo {
   position: relative;
   display: flex;
+  width: 3em;
+  flex-direction: row;
+  left: 10em;
+  top: 5em;
 }
 .heading-background{
   position: fixed;
@@ -167,16 +172,24 @@ li .link:hover{
 .project img{
 width: 25em;  
 height: 25em;
+border-radius:1em;
+box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 .contact{
   position: relative;
+  display: flex;
+  flex-direction: column;
+  left:10em;
   top:20em;
-  left:15em;
+  bottom: 20em;
+  align-items: flex-start;
   text-align: left;
 }
+
+
 .contact h1{
     font-family: 'Montserrat', sans-serif;
-  font-size: 5em;
+  font-size: 2em;
   text-align: left;
 }
 .amazing-color{
@@ -186,7 +199,7 @@ height: 25em;
 
 .contact .email{
   color:black;
-  font-size: 2em;
+  font-size: 1em;
 }
 .contact li{
   display: inline-block;
@@ -199,14 +212,14 @@ height: 25em;
   text-decoration: none;
   color:black;
 }
-.footer{
-  position: relative;
-  top:2em;
-  padding: 1em;
-}
-.footer a{
-  text-decoration: none;
-  color:#2c59fb;
+.gallery{
+  display: block;
+  position: absolute;
+  top:10em;
+  left: 8em;
+  bottom: 10em;
+  width: 80%;
+
 }
 
 
@@ -266,16 +279,11 @@ width: 38em;
 height: 38em;
 }
 
-.contact{
-  top:15em;
-  left:2em;
-}
+
 .contact h1{
   font-size: 3em;
 }
-.contact .email{
-  font-size: 2em;
-}
+
 
 .contact li{
   display: block;
@@ -283,11 +291,6 @@ height: 38em;
 }
 .contact li a{
   font-size: 2.5em;
-}
-.footer{
-  top:4em;
-  padding: 1em;
-  font-size: 2em;
 }
 
 
@@ -345,29 +348,8 @@ width: 30em;
 height: 30em;
 }
 
-.contact{
-  top:15em;
-  left:6em;
-}
-.contact h1{
-  font-size: 4em;
-}
-.contact .email{
-  font-size: 3.5em;
-}
 
-.contact li{
-  display: block;
-  padding: 2em;
-}
-.contact li a{
-  font-size: 2.5em;
-}
-.footer{
-  top:4em;
-  padding: 1em;
-  font-size: 2em;
-}
+
 
 }
 
@@ -430,10 +412,6 @@ width: 32em;
 height: 32em;
 }
 
-.contact{
-  top:10em;
-  left:8em;
-}
 
 .a .email{
   font-size: 3em;
@@ -443,11 +421,7 @@ height: 32em;
   font-size: 4em;
   padding: 1em;
 }
-.footer{
-  top:4em;
-  padding: 1em;
-  font-size: 4em;
-}
+
 
 
 }

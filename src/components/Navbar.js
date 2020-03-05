@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import { Link, animateScroll as scroll } from "react-scroll";
+import { animateScroll as scroll } from "react-scroll";
+import Scroll from 'react-scroll';
+import { Link } from "react-router-dom";
+
+
+const ScrollLink = Scroll.ScrollLink
 class Navbar extends Component {
     state = {  }
     scrollToTop = () => {
@@ -7,11 +12,11 @@ class Navbar extends Component {
     };
     render() { 
         return (<nav>
-            <ul> 
+            <ul className='Navbar'> 
                 <li><Link
                     className='link'
                     activeClass="active"
-                    to="homw"
+                    to="/home"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -21,7 +26,7 @@ class Navbar extends Component {
                 <li><Link
                     className='link'
                     activeClass="active"
-                    to="About"
+                    // to="/About"
                     spy={true}
                     smooth={true}
                     offset={-70}
