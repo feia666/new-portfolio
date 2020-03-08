@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+
 
 import Header from './components/Header';
 import About from './components/About';
@@ -21,7 +21,6 @@ function Home() {
        <div className="App-header">
       <Header></Header>
       </div>
-
 
     <div className = 'about' id='about-test'>
     <About></About>

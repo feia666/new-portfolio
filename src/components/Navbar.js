@@ -4,7 +4,7 @@ import Scroll from 'react-scroll';
 import { Link } from "react-router-dom";
 
 
-const ScrollLink = Scroll.ScrollLink
+// const ScrollLink = Scroll.ScrollLink
 class Navbar extends Component {
     state = {  }
     scrollToTop = () => {
@@ -16,7 +16,7 @@ class Navbar extends Component {
                 <li><Link
                     className='link'
                     activeClass="active"
-                    to="/home"
+                    to="home"
                     spy={true}
                     smooth={true}
                     offset={-70}
@@ -26,7 +26,7 @@ class Navbar extends Component {
                 <li><Link
                     className='link'
                     activeClass="active"
-                    // to="/About"
+                    to="About"
                     spy={true}
                     smooth={true}
                     offset={-70}

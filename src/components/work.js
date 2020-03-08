@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Project from './project';
-import Reveal from 'react-reveal/Reveal';
+import Slide from 'react-reveal/Slide';
 import data from '../yourdata';
 
 
@@ -10,8 +10,8 @@ class Work extends Component {
     render() { 
         return (<div>
         <h1 className='heading'>
-        <Reveal effect="fadeInUp" bottom cascade>Work.</Reveal></h1>
-        <div className='work-content'>
+        < Slide bottom >Work.</ Slide></h1>
+        < Slide bottom  ><div className='work-content'>
                 {data.projects.map((project)=>(
                     <Project key={project.id}
                              title = {project.title}
@@ -22,7 +22,7 @@ class Work extends Component {
                      ></Project>
                      
                 ))}
-        </div>
+        </div></Slide> 
         </div>  );
     }
 }

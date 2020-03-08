@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Reveal from 'react-reveal/Reveal';
+import Slide from 'react-reveal/Slide';
 import data from '../yourdata';
 
 class About extends Component {
@@ -7,10 +7,10 @@ class About extends Component {
     render() { 
         return (<div className='about'>
             <div className='about-content'>
-            <h1><Reveal Reveal effect="fadeInUp" bottom cascade>About.</Reveal></h1>
-            <Reveal Reveal effect="fadeInUp" bottom>
+            <Slide bottom><h1>About.</h1></Slide>
+            <Slide bottom>
                     <p>{data.abouttext}</p>
-            </Reveal>
+            </Slide>
 
             </div>
             {data.ShowAboutImage ? <img src={data.aboutImage} alt='about iamge'></img> : null}
