@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Project from './project';
 import Slide from 'react-reveal/Slide';
 import data from '../yourdata';
+import '../App.css';
 
 
 

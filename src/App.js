@@ -19,27 +19,20 @@ function App() {
   
   
   return (
-  <BrowserRouter>
+ 
     <div className="App">
-    <img className = 'logo' src = {logo} path= '/home' alt='logo'/>
-     
-
+    <img className = 'logo' src = {logo} path= "/home" component={Home} alt='logo'/>
   
-
-  <Route path= "/pj1" component={Page1}/>
+   <BrowserRouter>
+  <Route path= "/pj1" ext component={Page1}/>
   <Route path= "/home" component={Home}/>
   <Route path="/About" component={About}/>
   <Route path="/work" component={Work}/>
-
-<Navbar></Navbar>
-
-
-    
-
-
+  <Navbar></Navbar>
+  </BrowserRouter>
   
     </div>
-    </BrowserRouter>)
+    )
 }
 
 

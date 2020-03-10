@@ -26,7 +26,7 @@ export default
             title:'Project One', //Project Title - Add Your Project Title Here
              service:'UI/UX Design', // Add Your Service Type Here
             //Project Image - Add Your Project Image Here
-             imageSrc:require('./components/c1.jpg'),
+             imageSrc:require('./pic/c1.jpg'),
              //Project URL - Add Your Project Url Here
              url:'/pj1'
             },
@@ -34,21 +34,21 @@ export default
                 id: 2,//DO NOT CHANGE THIS (Please)😅
                 title: 'Project Two',
                 service: 'Website Development',
-                imageSrc: require('./components/c2.jpg'),
+                imageSrc: require('./pic/c2.jpg'),
                 url:'/pj2'
             },
             { 
                 id: 3,//DO NOT CHANGE THIS (Please)😅
                 title: 'Project Three',
                 service: 'Web App',
-                imageSrc: "https://images.unsplash.com/photo-1511500118080-275313ec90a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                imageSrc:require('./pic/c3.jpg'),
                 url:'/pj3'
             },
             {
                 id: 4,//DO NOT CHANGE THIS (Please)😅
                 title: 'Project Four',
                 service: 'Branding',
-                imageSrc: "https://images.unsplash.com/photo-1558452919-08ae4aea8e29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+                imageSrc:require('./pic/c4.jpg'),
                 url:'/pj4'
            }
 

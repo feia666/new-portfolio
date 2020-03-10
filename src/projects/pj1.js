@@ -1,6 +1,7 @@
 import React from 'react'
 import ImageGallery from 'react-image-gallery';
-import Navbar from '../components/Navbar';
+// import Navbar from '../components/Navbar';
+import '../App.css';
 
 function Page1(){
     const images = [
@@ -18,7 +19,7 @@ function Page1(){
         },
       ]
     return <div className="page">
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <div className = 'gallery'>
       <ImageGallery items={images} />
       </div>
