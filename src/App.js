@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Redirect, Route} from 'react-router-dom';
 
 import Header from './components/Header';
 import About from './components/About';
@@ -24,11 +24,12 @@ function App() {
     <img className = 'logo' src = {logo} path= "/home" component={Home} alt='logo'/>
   
    <BrowserRouter>
-  <Route path= "/pj1" ext component={Page1}/>
-  <Route path= "/home" component={Home}/>
-  <Route path="/About" component={About}/>
+   <Navbar></Navbar>
+   <Route path= "/home" component={Home}/>
+   <Route path= "/pj1" component={Page1}/>
+  <Route path="/about" component={About}/>
   <Route path="/work" component={Work}/>
-  <Navbar></Navbar>
+  <Route path="/contact" component={Contact}/>
   </BrowserRouter>
   
     </div>
