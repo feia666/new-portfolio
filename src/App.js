@@ -30,6 +30,7 @@ function App() {
   <Route path="/about" component={About}/>
   <Route path="/work" component={Work}/>
   <Route path="/contact" component={Contact}/>
+  {/* <Redirect to = "/home"/> */}
   </BrowserRouter>
   
     </div>
