@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Reveal from 'react-reveal/Reveal';
+import '../App.css';
+
 
 
 class Project extends Component {
