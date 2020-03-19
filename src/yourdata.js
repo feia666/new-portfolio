@@ -23,8 +23,8 @@ export default
        projects:[
            {
             id: 1,//DO NOT CHANGE THIS (Please)😅
-            title:'Project One', //Project Title - Add Your Project Title Here
-             service:'UI/UX Design', // Add Your Service Type Here
+            title:'Co-Family', //Project Title - Add Your Project Title Here
+             service:'UI/UX Design, speculative design', // Add Your Service Type Here
             //Project Image - Add Your Project Image Here
              imageSrc:require('./pic/c1.jpg'),
              //Project URL - Add Your Project Url Here
@@ -32,22 +32,22 @@ export default
             },
             {
                 id: 2,//DO NOT CHANGE THIS (Please)😅
-                title: 'Project Two',
-                service: 'Website Development',
+                title: 'Meetbie',
+                service: 'UX Design Challenge',
                 imageSrc: require('./pic/c2.jpg'),
                 url:'/pj2'
             },
             { 
                 id: 3,//DO NOT CHANGE THIS (Please)😅
-                title: 'Project Three',
-                service: 'Web App',
+                title: 'Cloud-Memory',
+                service: 'Mixed Reality App',
                 imageSrc:require('./pic/c3.jpg'),
                 url:'/pj3'
             },
             {
                 id: 4,//DO NOT CHANGE THIS (Please)😅
-                title: 'Project Four',
-                service: 'Branding',
+                title: 'Dance Here!',
+                service: 'Apple TV app design',
                 imageSrc:require('./pic/c4.jpg'),
                 url:'/pj4'
            }

@@ -7,13 +7,16 @@ class About extends Component {
     render() { 
         return (<div className='about'>
             <div className='about-content'>
-            <Slide bottom><h1>About.</h1></Slide>
+            <Slide bottom>
+                <h1>About.</h1>
+                {data.ShowAboutImage ? <img src={data.aboutImage} alt='about iamge'></img> : null}
+            </Slide>
             <Slide bottom>
                     <p>{data.abouttext}</p>
             </Slide>
 
             </div>
-            {data.ShowAboutImage ? <img src={data.aboutImage} alt='about iamge'></img> : null}
+        
             
 
         </div>  );

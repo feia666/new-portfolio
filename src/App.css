@@ -14,9 +14,12 @@ html,body,#root{
 
 
 
-.App {
+.content {
+  margin-top: 10rem;
+  margin-left: 10rem;
   width:100%;
-  align-content: center;
+  align-content: flex-start;
+  
 }
 
 
@@ -25,7 +28,6 @@ html,body,#root{
   position: relative;
   min-height: 100vh;
   color: black;
-  top:4em;
   align-content: center;
 }
 .logo {
@@ -33,8 +35,8 @@ html,body,#root{
   display: flex;
   width: 3em;
   flex-direction: row;
-  left: 10em;
-  top: 5em;
+  left: 10rem;
+  top: 5rem;
 }
 .heading-background{
   position: fixed;
@@ -50,14 +52,14 @@ header{
   display: flex;
   flex-direction: row;
   position: relative;
-  left: 10em;
-  top: 5em;
+
 }
 
 nav{
-  position: absolute;
- right: 10em;
-  top:5em;
+position: absolute;
+width: 50%;
+ right: 10rem;
+top:5rem;
  
 z-index: 100;
 }
@@ -92,13 +94,13 @@ li .link:hover{
 .header-title button{
   background: black;
   border: 0px;
-  padding: 1em 3em;
+  padding: 1rem 3rem;
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
-  margin-top: 3em;
+  margin-top: 3rem;
 }
 .header-title button:hover{
   opacity: 0.8;
@@ -115,10 +117,7 @@ li .link:hover{
   font-family: 'Montserrat', sans-serif;
   font-size: 2em;
   text-align: left;
-  left: 5em;
-  right: 5em;
-  top:5em;
- 
+
 }
 .about{
 
@@ -129,10 +128,7 @@ li .link:hover{
 .about-content{
   width: 80%;
   position: relative;
-  left: 10em;
-  right: 5em;
-  top: 15em;
-  align-content: space-between;
+
 }
 .about-content h1{
   font-family: 'Montserrat', sans-serif;
@@ -145,17 +141,19 @@ li .link:hover{
   width: 37em;
 }
 .about img{
-  margin-left: 5em;
-  height: 20em;
+  text-align: left;
+  width: 80%;
 }
 .work{
-  position: relative;
   display: flex;
+  flex-direction: row;
+  position: relative;
   width: 80%;
   flex-direction: column;
-  left:10em;
-  top:10em;
   align-items: flex-start;
+  column-count:2;
+  column-gap: 3em;
+  grid-row-gap: 2em;
 }
 .work .heading{
   font-family: 'Montserrat', sans-serif;
@@ -163,25 +161,49 @@ li .link:hover{
   text-align: left;
 }
 .work .work-content{
-  align-items: flex-end;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-gap: 2em;
+  width:80%;
+  align-content: center;
+  position: relative;
+
+  flex-flow: column;
+  column-width: 40%;
+
+
 }
+/* .work-wrap{
+  width:100%;
+  align-content: center;
+  margin-top: 5em;
+  margin-left:5em;
+  
+} */
+
 
 .project img{
-width: 25em;  
-height: 25em;
-border-radius:1em;
+width: 30rem;  
+height: 30rem;
+border-radius:1rem;
 box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+.project-text{
+position: relative;
+top:-30rem;
+left:32rem;
+}
+.contact-content{
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 0;
+
 }
 .contact{
   position: relative;
   display: flex;
   flex-direction: column;
-  left:10em;
-  top:20em;
-  bottom: 20em;
+  bottom:5em;
+
   align-items: flex-start;
   text-align: left;
 }
@@ -199,7 +221,7 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 
 .contact .email{
   color:black;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .contact li{
   display: inline-block;
@@ -223,77 +245,3 @@ box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 
-/* SMARTPHONES PORTRAIT
-@media only screen and (min-device-width: 320px) and (max-device-width : 480px){
-
-  body{
-    font-size: 6px;
-  }
-  header h1{
-font-size: 5em;  
-padding: 1em;
-margin-right: 0em;
-}
-
-.heading-background{
-  background-color: black;
-  display: none;
-}
-nav{
-  display: none;
-}
-.header-title{
-  font-size: 3em;
-  text-align: left;
-  top:1em;
-  left:1em;
-}
-.about{position: relative;
-      display: flex;
-      top:-30em;
-}
-.about img{
-  display: none
-}
-.about-content{
-  left:2em;
-}
-.about-content p{
-  font-size: 3.5em;
-  text-align: left;
-  width: 300px;
-}
-
-.work{
-  left:2em;
-  top:2em;
-  align-items: flex-start;
-}
-.work .work-content{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 5em;
-}
-.project img{
-width: 38em;  
-height: 38em;
-}
-
-
-.contact h1{
-  font-size: 3em;
-}
-
-
-.contact li{
-  display: block;
-  padding: 2em;
-}
-.contact li a{
-  font-size: 2.5em;
-}
-
-
-}
-
-/* iPads (portrait and landscape) ----------- */

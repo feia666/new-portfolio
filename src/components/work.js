@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component} from 'react';
 import Project from './project';
 import Slide from 'react-reveal/Slide';
 import data from '../yourdata';
@@ -9,7 +9,8 @@ import '../App.css';
 class Work extends Component {
     state = {  }
     render() { 
-        return (<div>
+        return (<div className = 'work-wrap'>
+       
         <h1 className='heading'>
         < Slide bottom >Work.</ Slide></h1>
         < Slide bottom  ><div className='work-content'>
@@ -21,9 +22,12 @@ class Work extends Component {
                              url={project.url}
                              
                      ></Project>
-                     
+                 
                 ))}
-        </div></Slide> 
+          
+        </div>
+        </Slide> 
+    
         </div>  );
     }
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Reveal from 'react-reveal/Reveal';
+import Slide from 'react-reveal/Slide';
 import data from '../yourdata';
 
 class Contact extends Component {
@@ -7,9 +7,9 @@ class Contact extends Component {
     render() { 
         return (  <div>
         <h1>
-                <Reveal effect="fadeInUp" bottom cascade> Contact.</Reveal>
+                < Slide bottom > Contact.</ Slide>
         </h1>
-        <Reveal effect="fadeInUp" bottom>
+        < Slide  bottom>
         <div className='contact-content'>
                 {/* <h1>
                 Let’s create your next<br></br>
@@ -21,7 +21,7 @@ class Contact extends Component {
                     ))}   
                 </ul>
         </div>
-        </Reveal>
+        </ Slide>
 
            
         </div>);

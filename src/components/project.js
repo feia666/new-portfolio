@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Reveal from 'react-reveal/Reveal';
+import Slide from 'react-reveal/Slide';
 import '../App.css';
 
 
@@ -8,16 +8,18 @@ class Project extends Component {
     state = {  }
     render() { 
         return ( 
-        <Reveal effect="fadeInUp" bottom>
+        <Slide bottom>
         <div className='project'>
             <a href={this.props.url}>
                 <img src={this.props.imageSrc} alt={this.props.title}></img>
              
             </a>
-            <h1>{this.props.title}</h1>
-            <span>{this.props.service}</span>
+            <div className = 'project-text'>
+                <h1>{this.props.title}</h1>
+                <span>{this.props.service}</span>
+            </div>
         </div> 
-            </Reveal>);
+            </Slide>);
     }
 }
  

@@ -19,20 +19,24 @@ function App() {
   
   
   return (
- 
-    <div className="App">
+    <div className = 'App'>
     <img className = 'logo' src = {logo} path= "/home" component={Home} alt='logo'/>
+    <div className = 'content'>
+   
   
    <BrowserRouter>
    <Navbar></Navbar>
-   <Route path= "/home" component={Home}/>
-   <Route path= "/pj1" component={Page1}/>
-  <Route path="/about" component={About}/>
-  <Route path="/work" component={Work}/>
-  <Route path="/contact" component={Contact}/>
-  {/* <Redirect to = "/home"/> */}
+   <Route exact path= "/home" component={Home}/>
+   <Route exact path= "/pj1" component={Page1}/>
+  <Route exact path="/about" component={About}/>
+  <Route exact path="/work" component={Work}/>
+  <Route exact path="/contact" component={Contact}/>
+  <Route exact path="/">
+  <Redirect to="/home" />
+</Route>
   </BrowserRouter>
   
+    </div>
     </div>
     )
 }
